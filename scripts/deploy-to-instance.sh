@@ -1,7 +1,6 @@
-echo "hello worlddd"
-sudo -s
-apt-get update -y
-apt-get install -y openssh-client rsync
+echo "hello worldd"
+sudo apt-get update -y
+sudo apt-get install -y openssh-client rsync
 
 eval $(ssh-agent -s)
 echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
