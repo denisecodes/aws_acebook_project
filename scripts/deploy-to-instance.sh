@@ -1,4 +1,5 @@
-echo "hello world"
+echo "hello worlddd"
+sudo -s
 apt-get update -y
 apt-get install -y openssh-client rsync
 
