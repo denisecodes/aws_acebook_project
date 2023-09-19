@@ -34,4 +34,6 @@ jobs:
           config-file: cypress.config.js
           start: npm run start:ci
       - name: Deploy
-        run: ./scripts/deploy-to-instance.sh
+        run: |
+          chmod +x ./scripts/deploy-to-instance.sh
+          ./scripts/deploy-to-instance.sh
