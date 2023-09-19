@@ -35,5 +35,4 @@ jobs:
           start: npm run start:ci
       - name: Deploy
         run: |
-          npm run build
           ./scripts/deploy-to-instance.sh

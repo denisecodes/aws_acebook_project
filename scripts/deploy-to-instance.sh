@@ -1,3 +1,4 @@
+echo "hello world"
 apt-get update -y
 apt-get install -y openssh-client rsync
 
