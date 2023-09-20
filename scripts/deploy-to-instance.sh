@@ -1,4 +1,5 @@
 echo "hello worldd"
+echo "$INSTANCE_IP_ADDRESS"
 sudo apt-get update -y
 sudo apt-get install -y openssh-client rsync
 
