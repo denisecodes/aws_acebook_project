@@ -22,7 +22,9 @@ jobs:
       - name: Check variables
         run: |
           echo "My SSH key is ${{ env.SSH_PRIVATE_KEY }}"
-          echo "My IP Address is ${{ env.INSTANCE_IP_ADDRESS }}"
+          echo "My SSH key is $SSH_PRIVATE_KEY"
+          echo "My IP Address is ${{ env.INSTANCE_IP_ADDRESS}}"
+          echo "My IP Address is $INSTANCE_IP_ADDRESS"
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Set up Node.js
