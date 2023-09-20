@@ -1,5 +1,6 @@
-echo "hello worldd"
+echo "hello team dragonfly"
 echo "$INSTANCE_IP_ADDRESS"
+echo "$SSH_PRIVATE_KEY"
 sudo apt-get update -y
 sudo apt-get install -y openssh-client rsync
 
