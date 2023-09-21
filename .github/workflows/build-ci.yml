@@ -14,7 +14,7 @@ jobs:
           - 27017:27017
         options: --name=mongodb
     env:
-      MONGODB_URL: mongodb://localhost:27017/acebook_test
+      MONGODB_URL: mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.10.6
       INSTANCE_IP_ADDRESS_1: ${{ vars.INSTANCE_IP_ADDRESS_1 }}
       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       INSTANCE_IP_ADDRESS_2: ${{ vars.INSTANCE_IP_ADDRESS_2 }}
