@@ -18,6 +18,8 @@ jobs:
       INSTANCE_IP_ADDRESS_1: ${{ vars.INSTANCE_IP_ADDRESS_1 }}
       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       INSTANCE_IP_ADDRESS_2: ${{ vars.INSTANCE_IP_ADDRESS_2 }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
       - name: Check variables
         run: |
@@ -42,4 +44,4 @@ jobs:
           config-file: cypress.config.js
           start: npm run start:ci
       - name: Deploy
-        run: bash ./scripts/deploy-to-instance.sh
+        run: bash ./scripts/build-ami.sh
